@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: users
+          uri: lb://users
+          predicates:
+            - Path=/s2/**
+        #          filters:
+        #            - RewritePath =/api/libuser/(?<segment>.*), /$\{segment}
+        - id: admin
+          uri: lb://admin
+          predicates:
+            - Path=/s1/**
+#          filters:
+#            - RewritePath =/api/books/(?<segment>.*), /$\{segment}

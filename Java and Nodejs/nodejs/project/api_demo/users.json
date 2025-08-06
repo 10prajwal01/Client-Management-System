@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "101",
+      "name": "Sam",
+      "email": "sam@gmail.com",
+      "phoneNumber": "9834454212",
+      "age": "52",
+      "information": "I am good",
+      "password": "password"
+    },
+    {
+      "id": "2556",
+      "name": "Tam",
+      "email": "tam@gmail.com",
+      "password": "password",
+      "phoneNumber": "9834466612",
+      "age": "42",
+      "information": "I am good at Murder"
+    }
+  ]
+}
